@@ -1,7 +1,5 @@
 // for loop
 
-const { textSpanIntersectsWith } = require("typescript");
-
 for (let i = 0; i < 5; i++) {
   console.log(i);
 }
@@ -112,4 +110,17 @@ switch (grade) {
 
 // variables & block scope
 
+let age4 = 30;
 
+if (true) {
+  let age4 = 40;
+  let name4 = "ali";
+  console.log(age4);
+  if (true) {
+    console.log(age4)
+    console.log(name4)
+  }
+}
+
+console.log(age4);
+console.log(name4)

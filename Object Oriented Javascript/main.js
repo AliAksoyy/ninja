@@ -96,3 +96,42 @@ const admin = new Admin("ali", "ali@ali", 30, 0);
 admin.delete(userOne1);
 
 console.log(admin);
+
+function User1(name, email, age) {
+  this.name = name;
+  this.email = email;
+  this.age = age;
+  this.isLogin = false;
+  this.fullName = function () {
+    return this.email + " " + this.name;
+  };
+}
+
+const newuser1 = new User1("ali", "ali@ali", 30);
+const newuser2 = new User1("feyza", "feyza@feyza", 28);
+
+User1.prototype.login1 = function () {
+  this.isLogin = true;
+  console.log(this.email);
+};
+
+console.log(newuser1);
+console.log(newuser2);
+console.log(newuser2.fullName());
+newuser1.__proto__.aliss = function () {
+  console.log("hello");
+};
+console.log(newuser1);
+newuser1.aliss();
+newuser1.login1();
+
+function Admin1(...args) {
+  User1.apply(this, args);
+}
+
+const admin1 = new Admin1("ayse", "ayse@ayse", 32);
+console.log(admin1);
+console.log(admin1.fullName());
+
+Admin1.prototype = Object.create(User1.prototype);
+console.log(admin1);

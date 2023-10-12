@@ -12,7 +12,11 @@
         <div id="page-banner">
           <h1 class="title">Bookorama</h1>
           <p>Books for Ninjas</p>
-          <a style="text-align: center; display: block;" href="http://www.thenetninja.co.uk">Click Here</a>
+          <a
+            style="text-align: center; display: block"
+            href="http://www.thenetninja.co.uk"
+            >Click Here</a
+          >
           <form id="search-books">
             <input type="text" placeholder="Search books..." />
           </form>
@@ -40,9 +44,33 @@
         </ul>
       </div>
       <form id="add-book">
-        <input type="text" placeholder="Add a book..." />
-        <button>Add</button>
+        <input type="checkbox" id="hide" />
+        <label for="hide">Hide all books</label>
+        <div id="content">
+          <input type="text" placeholder="Add a book..." />
+          <button>Add</button>
+        </div>
       </form>
+      <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="active">About</li>
+          <li data-target="#contact">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>Content for about tab..</p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quidem
+            tempora reprehenderit?
+          </p>
+        </div>
+        <div class="panel" id="contact">
+          <p>Content for contact tab..</p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quidem
+            tempora reprehenderit?
+          </p>
+        </div>
+      </div>
     </div>
     <script src="main.js"></script>
   </body>

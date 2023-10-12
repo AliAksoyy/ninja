@@ -90,6 +90,10 @@ h2 {
   margin: 0 auto;
 }
 
+#add-book #content {
+  display: flex;
+}
+
 #add-book input {
   display: block;
   margin: 20px 0;
@@ -99,7 +103,6 @@ h2 {
   border-radius: 4px 0 0 4px;
   box-sizing: border-box;
   width: 300px;
-  float: left;
 }
 
 #add-book button {
@@ -117,30 +120,38 @@ h2 {
   color: white;
 }
 
-#add-book:after {
-  content: "";
+#add-book #hide {
+  width: 30px;
+}
+
+#add-book label {
+  width: 52px;
+  position: relative;
+  top: -2.3rem;
+  left: 2rem;
+}
+
+#tabbed-content li {
+  display: inline-block;
+  padding: 10px 14px;
+  background: #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#tabbed-content li.active {
+  background: #c71c1c !important;
+  color: #ddd;
+}
+
+#tabbed-content .panel {
+  display: none;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  border-radius: 4px;
+}
+
+#tabbed-content .panel.active {
   display: block;
-  clear: both;
 }
-
-/*
-#tabbed-content li{
-    display: inline-block;
-    padding: 10px 14px;
-    background: #ddd;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-#tabbed-content .tab{
-    display: none;
-    border: 1px solid #ddd;
-    padding: 0 10px;
-    border-radius: 4px;
-}
-
-#tabbed-content .tab.active{
-    display: block;
-}
-*/

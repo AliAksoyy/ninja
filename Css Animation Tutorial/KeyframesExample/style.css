@@ -1,110 +1,59 @@
-html,
-body {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  margin: 0;
+body{margin: 0; position: relative;}
+body.pop-up{background: #222;}
+*{
+  font-family: Calibri, sans-serif; 
+  font-weight: normal;
+  color: #333;
 }
-
-.grass,
-.sky,
-.road {
-  position: relative;
+h1{
+  font-size: 48px;
+  margin: 10px 0;
 }
-
-.sky {
-  height: 40%;
-  background: skyblue;
+p{
+  margin-bottom: 40px;
 }
-
-.grass {
-  height: 30%;
-  background: seagreen;
+#pop-up{
+  position: relative; 
+  top: 200px; 
+  width: 500px; 
+  margin: 0 auto; 
+  text-align: center;
 }
-
-.road {
-  height: 30%;
-  background: dimgrey;
+#pop-up .container{
+  background: #f0e4d4; 
+  padding: 30px; 
+  position: absolute; 
+  top: 50px; 
+  width: 100%; 
   box-sizing: border-box;
-  border-top: 10px solid grey;
-  border-bottom: 10px solid grey;
-  width: 100%;
 }
-.lines {
-  box-sizing: border-box;
-  border: 5px dashed #fff;
-  height: 0px;
-  width: 100%;
+#pop-up input{
+  padding: 10px;
+  border: 0;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+button{
+  padding: 10px;
+  border: 0;
+  color: #fff;
+  background: #333;
+  margin-left: -5px;
+  margin-left: -5px;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+.cross{
   position: absolute;
-  top: 50%;
-  transform: translateX(-50%, -50%);
-}
-
-.mario {
-  position: absolute;
-  top: -40px;
-  left: 0px;
-  animation: jump 0.3s 1.2s ease, drive 2s linear backwards normal infinite;
-}
-
-.luigi {
-  position: absolute;
-  top: 120px;
-  left: 0;
-  animation: drive 3s linear infinite backwards;
-}
-
-.cloud {
-  position: absolute;
-  animation: wind 4s linear infinite reverse;
-}
-
-.cloud:nth-child(1) {
   top: 10px;
-  opacity: 0.7;
-  animation-delay: 1s;
-  animation: wind 10s linear infinite reverse;
-}
-.cloud:nth-child(2) {
-  right: 100px;
-  top: 55px;
-  animation: wind 10s linear infinite reverse;
-}
-
-@keyframes drive {
-  0% {
-    left: -130px;
-  }
-  100% {
-    left: 110%;
-  }
-}
-@keyframes drive1 {
-  from {
-    transform: translateX(-200px);
-  }
-  to {
-    transform: translateX(2000px);
-  }
-}
-
-@keyframes wind {
-  from {
-    transform: translateX(-200px);
-  }
-  to {
-    transform: translateX(100%);
-  }
-}
-
-@keyframes jump {
-  0% {
-    top: -40px;
-  }
-  50% {
-    top: -100px;
-  }
-  100% {
-    top: -40px;
-  }
+  left: 10px;
+  background: #555;
+  color: #ddd;
+  font-weight: bold;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  border-radius: 11px;
 }

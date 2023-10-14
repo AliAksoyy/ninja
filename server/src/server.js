@@ -12,7 +12,7 @@ app.use(
   })
 );
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json({ extended: true }));
+app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
   const todos = JSON.parse(

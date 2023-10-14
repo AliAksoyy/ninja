@@ -1,0 +1,110 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.grass,
+.sky,
+.road {
+  position: relative;
+}
+
+.sky {
+  height: 40%;
+  background: skyblue;
+}
+
+.grass {
+  height: 30%;
+  background: seagreen;
+}
+
+.road {
+  height: 30%;
+  background: dimgrey;
+  box-sizing: border-box;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+  width: 100%;
+}
+.lines {
+  box-sizing: border-box;
+  border: 5px dashed #fff;
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%, -50%);
+}
+
+.mario {
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  animation: jump 0.3s 1.2s ease, drive 2s linear backwards normal infinite;
+}
+
+.luigi {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  animation: drive 3s linear infinite backwards;
+}
+
+.cloud {
+  position: absolute;
+  animation: wind 4s linear infinite reverse;
+}
+
+.cloud:nth-child(1) {
+  top: 10px;
+  opacity: 0.7;
+  animation-delay: 1s;
+  animation: wind 10s linear infinite reverse;
+}
+.cloud:nth-child(2) {
+  right: 100px;
+  top: 55px;
+  animation: wind 10s linear infinite reverse;
+}
+
+@keyframes drive {
+  0% {
+    left: -130px;
+  }
+  100% {
+    left: 110%;
+  }
+}
+@keyframes drive1 {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(2000px);
+  }
+}
+
+@keyframes wind {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: -40px;
+  }
+  50% {
+    top: -100px;
+  }
+  100% {
+    top: -40px;
+  }
+}

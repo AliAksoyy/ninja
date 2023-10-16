@@ -25,8 +25,8 @@ body {
 
 .grid-container > div:nth-child(1) {
   grid-column: 1 / span 2;
-  /* align-self: self-start;
-  justify-self: end; */
+  align-self: self-start;
+  justify-self: end;
 }
 .grid-container > div:nth-child(2) {
   grid-column: span 3;

@@ -29,11 +29,36 @@ nav a {
   padding: 10px;
   text-align: center;
   transition: background-color 0.5s ease;
-  background-color: #777;
 }
 
 nav a:hover {
   background-color: #555;
+}
+
+a.tw {
+  background: url(./imgs/tw.png) no-repeat center;
+  background-size: 80%;
+}
+
+a.fb {
+  background: url(./imgs/fb.png) no-repeat center;
+  background-size: 80%;
+}
+
+.social a {
+  text-indent: -17500px;
+}
+.social {
+  max-width: 80px;
+  margin: 0 auto;
+}
+nav ul.social {
+  flex: 1 1 0;
+  display: flex;
+}
+
+nav ul.social li {
+  flex: 1 1 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -43,5 +68,14 @@ nav a:hover {
   }
   nav ul li {
     flex: 1 1 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social {
+    margin: 0;
   }
 }

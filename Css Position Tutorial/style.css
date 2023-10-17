@@ -7,3 +7,7 @@ a {
   margin: 20px;
   display: inline-block;
 }
+
+/*  inline elementlere margin-left ve right ve widht işlemez o yüzden inline-block yapmak gerekiyor */
+
+

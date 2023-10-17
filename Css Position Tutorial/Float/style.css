@@ -33,18 +33,32 @@
   width: 100px;
 } */
 
+.services::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .service h2,
 .service p {
-  color: #999;
+  color: #fff;
   margin: 10px;
   text-align: center;
 }
 
 .service {
   float: left;
-  background-color: #d3d3c3;
+  background-color: #46bfc4;
   width: 29%;
   margin: 1%;
   height: 140px;
   padding: 1%;
+}
+
+.content {
+  border: 2px solid red;
+  padding: 10px;
+  background-color: #b19b9b;
+  clear: both;
+  margin-top: 20px;
 }

@@ -99,3 +99,27 @@
   margin: 0;
   color: #ffffff7e;
 }
+
+nav {
+  background-color: #333;
+  padding: 5px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+}
+
+nav ul {
+  padding: 0;
+}
+nav ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+nav li {
+  list-style-type: none;
+  margin: 0 10px;
+  float: right;
+  color: #fff;
+}

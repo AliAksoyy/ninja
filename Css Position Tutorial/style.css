@@ -1,0 +1,9 @@
+p,
+a {
+  text-align: center;
+  width: 15%;
+  padding: 50px;
+  border: 2px solid #000;
+  margin: 20px;
+  display: inline-block;
+}

@@ -11,6 +11,12 @@
   clear: both;
 }
 
+.services {
+  border: 2px solid red;
+  overflow:auto;
+
+}
+
 .services::after {
   content: "";
   display: block;
@@ -39,9 +45,11 @@
 }
 .service:nth-child(2) {
   top: 15px;
+ 
 }
 .service:nth-child(3) {
   top: 25px;
+ 
 }
 
 .content {
@@ -89,7 +97,6 @@
   overflow: hidden;
   margin: 1%;
   position: relative;
-  
 }
 
 #banner h2 {

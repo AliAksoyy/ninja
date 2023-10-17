@@ -16,7 +16,7 @@
   margin: 10px;
 } */
 
-.blue {
+/* .blue {
   background-color: blue;
   float: right;
 }
@@ -31,4 +31,20 @@
 .box {
   height: 100px;
   width: 100px;
+} */
+
+.service h2,
+.service p {
+  color: #999;
+  margin: 10px;
+  text-align: center;
+}
+
+.service {
+  float: left;
+  background-color: #d3d3c3;
+  width: 29%;
+  margin: 1%;
+  height: 140px;
+  padding: 1%;
 }

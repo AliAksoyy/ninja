@@ -1,0 +1,41 @@
+.main {
+  width: 100%;
+  background-color: #bbbeee;
+  height: 1000px;
+  margin: 30px;
+  padding: 5px;
+  position: relative;
+}
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(226, 189, 21);
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(146, 26, 126);
+  position: relative;
+  /* position: relative;
+  top: 20px;
+  left: 30px; */
+}
+.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(32, 192, 11);
+  /* position: absolute;
+  top: 20px;
+  left: 105px; */
+}
+
+#icerde {
+  width: 30px;
+  height: 30px;
+  background-color: #279b9b;
+  font-size: 0.51em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

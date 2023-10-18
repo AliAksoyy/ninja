@@ -1,4 +1,5 @@
 /* --- Variables --- */
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&display=swap");
 :root {
   --theme-color: #3c86e0;
   --link-color: #daa33e;
@@ -8,10 +9,6 @@
 @font-face {
   font-family: pokemon;
   src: url(./fonts/pokemon.ttf);
-}
-
-body {
-  font-family: pokemon !important;
 }
 
 nav {
@@ -44,6 +41,7 @@ nav.main-nav ul {
   list-style-type: none;
   padding: 0;
   text-align: center;
+  font-family: Srisakdi !important;
 }
 
 nav a {
@@ -65,6 +63,7 @@ nav a {
   top: -100px;
   padding: 40px 60px;
   background: #fff;
+  font-family: pokemon !important;
 }
 
 .spot {
@@ -105,6 +104,10 @@ footer .blurb {
   color: #333;
   line-height: 2em;
   font-size: 0.9em;
+}
+
+footer .blurb p {
+  font-family: "Alumni Sans Collegiate One", sans-serif;
 }
 
 .swatches span {

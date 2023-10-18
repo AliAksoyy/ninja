@@ -1,7 +1,7 @@
 .main {
   width: 100%;
   background-color: #bbbeee;
-  height: 1000px;
+  height: 2000px;
   margin: 30px;
   padding: 5px;
   position: relative;
@@ -11,6 +11,12 @@
   width: 100px;
   height: 100px;
   background-color: rgb(226, 189, 21);
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 20px;
+  position: fixed;
+  top: 100px;
+  left: 20px;
 }
 .box2 {
   width: 100px;
@@ -28,6 +34,9 @@
   /* position: absolute;
   top: 20px;
   left: 105px; */
+  position: sticky;
+  left: 0;
+  top: 50px;
 }
 
 #icerde {
@@ -37,5 +46,11 @@
   font-size: 0.51em;
   position: absolute;
   top: 0;
+  left: 0;
+}
+
+p {
+  position: sticky;
+  top: 20px;
   left: 0;
 }

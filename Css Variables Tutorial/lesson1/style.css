@@ -5,6 +5,15 @@
   --layout: 1fr 1fr 1fr;
 }
 
+@font-face {
+  font-family: pokemon;
+  src: url(./fonts/pokemon.ttf);
+}
+
+body {
+  font-family: pokemon !important;
+}
+
 nav {
   --link-color: #000;
 }

@@ -42,9 +42,9 @@ form input {
 
 .tooltip::before {
   content: "";
-  border-width: 10px 8px 0 8px;
+  border-width: 10px 8px 0px 8px;
   border-style: solid;
-  border-color: rgba(0, 0, 0, 0.3) transparent transparent transparent;
+  border-color: rgb(0, 0, 0, 0.3) transparent;
   margin-left: -8px;
   top: -20px;
 }

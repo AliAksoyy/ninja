@@ -1,40 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>CSS Only Lightbox / Popup</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
   </head>
   <body>
-    <!-- popup code -->
-    <div id="xmas-popup" class="popup">
+    <div class="popup" id="pop_up">
       <div class="popup-content">
-        <img src="popup.jpg" alt="xmas-sale" />
-        <a href="" class="close">x</a>
+        <img src="./popup.jpg" alt="a" />
+        <a href="" class="close">X</a>
       </div>
     </div>
-
-    <!-- normal page code -->
     <div class="wrapper">
       <h1>CSS Only Popup</h1>
       <p>
-        Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat. Ut ninja wisi enim ad minim veniam, quis nostrud exerci tation
-        ullamcorper suscipit ninja lobortis nisl ut aliquip ex ea commodo
-        consequat. Duis ninja autem vel eum iriure dolor in hendrerit in
-        vulputate ninja velit esse molestie consequat, vel illum dolore eu
-        feugiat nulla ninja facilisis at vero eros et accumsan et iusto odio
-        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore
-        te feugait nulla facilisi. Nam ninja ipsum liber tempor cum soluta nobis
-        eleifend option congue nihil imperdiet doming id quod mazim placerat
-        facer possim assum. Typi ninja non habent claritatem insitam; est usus
-        legentis in iis qui facit eorum claritatem. Investigationes ninja
-        demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas
-        ninja est etiam processus dynamicus, qui ninja sequitur mutationem
-        consuetudium lectorum.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel distinctio
+        necessitatibus error maxime repudiandae impedit debitis rerum fugit eum
+        optio totam, non sint. Impedit totam repudiandae saepe? Odio, earum? Id
+        impedit error omnis est placeat. At ad rerum, id aliquam adipisci
+        incidunt doloribus nulla asperiores beatae corrupti reiciendis eum velit
+        sunt illo quisquam dicta repellendus ipsa dolorum ab sapiente.
+        Voluptatibus officia sit quae nam praesentium nostrum a deserunt quas
+        architecto, totam, dignissimos delectus animi nihil dolor! Corporis
+        rerum vero fuga odio dolore molestias doloribus nemo ipsam qui, dolores
+        debitis, consequatur magnam repudiandae obcaecati a sapiente quas magni
+        laboriosam? Eveniet obcaecati quia quod vel cumque debitis esse, fuga
+        possimus blanditiis eos reprehenderit minus magnam optio voluptatibus
+        dolorum deleniti autem recusandae voluptatem commodi similique
+        veritatis. Iste magnam possimus dolor quam? Aliquam quas ex vitae dolor
+        asperiores natus repellat, rem repellendus. Delectus, eveniet rerum.
+        Sapiente quidem provident aliquid sit mollitia expedita perferendis
+        atque consequuntur temporibus possimus, veritatis libero eos aspernatur
+        natus deserunt exercitationem nam, fugit repudiandae labore odit. Dolore
+        debitis exercitationem ducimus necessitatibus dolor consectetur aliquam
+        fugit veritatis praesentium architecto corporis voluptatem voluptates
+        nostrum ex odio quia temporibus minima ipsum deleniti, ullam, animi
+        soluta iusto fuga. Facere aliquid corrupti cupiditate, amet quasi
+        voluptatibus.
       </p>
-      <a href="#xmas-popup" class="button">Shown Popup</a>
+      <a href="#pop_up" class="button">Show PopUp</a>
     </div>
+    <script>
+      const close = document.querySelector(".popup");
+      close.addEventListener("click", (e) => {
+        if (e.target.classList.contains("popup")) {
+          e.target.style.display = "none";
+          window.location.href = window.location.href.split("#")[0];
+        }
+      });
+    </script>
   </body>
 </html>

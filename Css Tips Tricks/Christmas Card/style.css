@@ -11,7 +11,7 @@ body {
   left: 0;
   position: relative;
   perspective: 1400px;
-  transition: all 1s ;
+  transition: all 1s;
 }
 
 .left-card {
